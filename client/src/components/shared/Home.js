@@ -5,9 +5,6 @@ const Home = () => (
   <> 
     <HomeHead />
   </>
-
-
-  
 )
 
 
