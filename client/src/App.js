@@ -12,10 +12,9 @@ const App = () => (
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/team' element={<Team />} />
-      <Route path='/workers' element{<Workers />} />
+      <Route path='/workers' element={<Workers />} />
       <Route path='/:serviceId/comments' element={<Comments />} />
       <Route path='/*' element={<Nomatch />} />
-      <Route path='/team' element={<Team />} />
     </Routes>
   
   </>

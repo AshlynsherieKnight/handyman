@@ -9,19 +9,19 @@ const Comments = () => {
   const { serviceId } = useParams()
 
   useEffect( () => {
-    axios.get(`/api/lists/${serviceId}/comments`)
+    axios.get(`/api/services/${serviceId}/comments`)
       .then(res => setComment(res.data))
       .catch( err => console.log(err))
   }, [])
   
   const addComment = (comment) => {
-    axios.post(`/api/lists/${serviceId}/comments`, { comment })
+    axios.post(`/api/services/${serviceId}/comments`, { comment })
       .then( res => setComment([...comments, res.data]))
       .catch( err => console.log(err))
   }
 
   const updateComments = (id, comment) => {
-    axios.put(`/api/lists/${serviceId}/comments/${id}`, { comment })
+    axios.put(`/api/services/${serviceId}/comments/${id}`, { comment })
       .then( res => {
         const newUpdatedComments = comments.map( t => {
           if (t.id === id) {
@@ -35,7 +35,7 @@ const Comments = () => {
   }
 
   const deleteComment = (id) => {
-    axios.delete(`/api/lists/${serviceId}/comments/${id}`)
+    axios.delete(`/api/services/${serviceId}/comments/${id}`)
       .then( res => {
         setComment( comments.filter(t => t.id !== id ))
         alert(res.data.message)
