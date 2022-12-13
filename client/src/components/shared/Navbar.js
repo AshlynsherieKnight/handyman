@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => (
   <>
     <nav>
-      <h3>HandyMan</h3>
+      <h2>Handyman Menu</h2>
       <ul>
         <Link to='/'>
           <li>Home</li>

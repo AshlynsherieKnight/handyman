@@ -47,5 +47,3 @@ class Api::CommentsController < ApplicationController
       @service = Service.find(params[:service_id])
     end
 end
-
-end
