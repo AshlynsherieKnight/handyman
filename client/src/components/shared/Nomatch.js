@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom"
 
 const Nomatch = () => (
   <>
-    <h1>404 Error - Page not Found</h1>
-    <Link to='/'>
-      Return Home
-    </Link>
+    <h1>404 Page not found</h1>
+  
+  <Link to='/'>Return Home</Link>
+  
   </>
 )
 

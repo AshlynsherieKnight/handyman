@@ -1,3 +1,4 @@
+
 const Team = () => (
   <>
     <h2>Meet the Team!</h2>
