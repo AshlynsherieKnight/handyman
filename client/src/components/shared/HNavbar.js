@@ -28,7 +28,11 @@ const HNavbar = () => (
               <li>Workers</li>
               </Link>
             </NavDropdown.Item>
-            
+            <NavDropdown.Item>
+              <Link to='/team'>
+              <li>Team</li>
+              </Link>
+            </NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
