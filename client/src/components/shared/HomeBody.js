@@ -30,10 +30,11 @@ const HomeBody = () => (
     <br />
     <br />
     <Container>
-      <Row>
+      <Row className='text-center'>
         <h2>Services</h2>
         <h6>Call Us Now (123) 123-1234</h6>
       </Row>
+      <br />
       <Row>
         <Col>
           <Card style={{ width: '18rem', height: '24rem' }}>
