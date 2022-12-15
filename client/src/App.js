@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/shared/Home';
 import Nomatch from './components/shared/Nomatch';
-import Navbar from './components/shared/Navbar';
+import HNavbar from './components/shared/HNavbar';
 import Team from './components/shared/Team';
 import Comments from './components/comments/Comments';
 import Workers from './components/workers/Workers';
@@ -9,7 +9,7 @@ import Services from './components/services/Services';
 
 const App = () => (
   <> 
-    <Navbar />
+    <HNavbar />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/team' element={<Team />} />

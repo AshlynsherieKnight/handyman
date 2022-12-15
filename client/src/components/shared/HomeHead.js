@@ -1,5 +1,6 @@
 const HomeHead = () => (
-  <h1>Worker Handyman Page</h1>
+  <h1>Worker Handyman HomePage</h1>
+
 )
 
 export default HomeHead;
