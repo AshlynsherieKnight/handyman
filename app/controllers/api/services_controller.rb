@@ -35,7 +35,7 @@ class Api::ServicesController < ApplicationController
   private
   
     def service_params
-      params.require(:service).permit(:name)
+      params.require(:service).permit(:info, :service_type, :location)
     end
   
     def set_worker

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const CommentForm = ({ addComment, id, comment_subject, comment_body, updateComment, setEdit }) => {
-  const [comment, setComment] = useState({ title: '', rating: 0, complete: false, price: null })
+const CommentForm = ({ addComment, id, comment_subject, comment_body, updateComments, setEdit }) => {
+  const [comment, setComment] = useState({ comment_subject: '', comment_body: '' })
 
   useEffect( () => {
     if (id) {
@@ -12,7 +12,7 @@ const CommentForm = ({ addComment, id, comment_subject, comment_body, updateComm
   const handleSubmit = (e) => {
     e.preventDefault()
     if (id) {
-      updateComment(id, comment)
+      updateComments(id, comment)
       setEdit(false)
     } else {
       addComment(comment)
@@ -22,13 +22,13 @@ const CommentForm = ({ addComment, id, comment_subject, comment_body, updateComm
 
   return (
     <>
-      <h1>{id ? 'Update' : 'Create'} Todo</h1>
+      <h1>{id ? 'Update' : 'Create'} Comment</h1>
       <form onSubmit={handleSubmit}>
         <label>Subject</label>
         <input 
           name='subject'
-          value={comment.subject}
-          onChange={(e) => setComment({ ...comment, subject: e.target.value })}
+          value={comment.comment_subject}
+          onChange={(e) => setComment({ ...comment, comment_subject: e.target.value })}
           required
         />
         <label>Comment</label>

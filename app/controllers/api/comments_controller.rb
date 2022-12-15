@@ -1,9 +1,9 @@
 class Api::CommentsController < ApplicationController
-
+  before_action :set_service
   before_action :set_comment, only: [:show, :update, :destroy]
 
   def index
-    render json: @service.comments.all
+    render json: @service.comments
   end
 
   def show
@@ -30,9 +30,8 @@ class Api::CommentsController < ApplicationController
   def destroy
     @comment.destroy
     render json: { message: 'comment deleted' }
-
-    
   end
+
   private
   
     def comment_params

@@ -24,6 +24,8 @@ const CommentShow = ({ id, comment_subject, comment_body, updateComments, delete
         </> 
         :
         <>
+        <h2>{comment_subject}</h2>
+        <p>{comment_body}</p>
           <button
             onClick={() => setEdit(true)}
           >
