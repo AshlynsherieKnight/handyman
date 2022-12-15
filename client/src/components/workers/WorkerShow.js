@@ -23,7 +23,7 @@ const WorkerShow = ({ id, first_name, last_name, updateWorker, deleteWorker, cre
           </>
         :
         <>
-          <h1>{first_name} {last_name}</h1>
+          <h1>TEST ME {first_name} {last_name}</h1>
           <button onClick={() => setEdit(true)}>
             Edit
           </button>

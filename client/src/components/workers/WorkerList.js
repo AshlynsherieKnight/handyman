@@ -2,10 +2,10 @@ import WorkerShow from './WorkerShow';
 
 const WorkerList = ({ workers, updateWorker, deleteWorker, created_at }) => (
   <>
-    { workers.map(u =>
+    { workers.map(w =>
       <WorkerShow
-        key={u.id}
-        {...u}
+        key={w.id}
+        {...w}
         updateWorker={updateWorker}
         deleteWorker={deleteWorker}
       />
