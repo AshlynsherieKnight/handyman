@@ -41,6 +41,7 @@ const Workers = () => {
   return (
     <>
       <WorkerForm addWorker={addWorker} />
+      <br />
       <h1>All Workers</h1>
       <WorkerList
         workers={workers}

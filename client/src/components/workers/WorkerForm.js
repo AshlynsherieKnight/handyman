@@ -22,7 +22,7 @@ const WorkerForm = ({ addWorker, id, first_name, last_name, updateWorker, setEdi
 
   return (
     <>
-      <h1>{id ? "Update" : "Create"} Worker</h1>
+      <h2>{id ? "Update" : "Add New"} Worker</h2>
       <form onSubmit={handleSubmit}>
         <label>First Name</label>
         <input 
