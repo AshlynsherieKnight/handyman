@@ -10,14 +10,18 @@ const HNavbar = () => (
     <Container>
       <Navbar.Brand>HandyMan</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Link to='/'>
-            <li>Home</li>
-          </Link>
-          <Link to='/team'>
-            <li>Team</li>
-          </Link>
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav className="">
+          <Nav.Link>
+            <Link to='/'>
+              <li>Home</li>
+            </Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to='/team'>
+              <li>Team</li>
+            </Link>
+          </Nav.Link>
           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item>
               <Link to='/workers'>
