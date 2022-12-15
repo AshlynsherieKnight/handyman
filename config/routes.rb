@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       resources :services
     end
 
-    resource :services, except: [:index, :show, :create, :update, :destroy] do
+    resources :services, except: [:index, :show, :create, :update, :destroy] do
       resources :comments
     end
   end
