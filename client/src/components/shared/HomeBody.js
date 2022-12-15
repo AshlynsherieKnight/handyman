@@ -22,7 +22,7 @@ const HomeBody = () => (
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </Row>
           <Row>
-            <Button variant="outline-dark" >Meet the Team</Button>
+            <Button href="/Team" variant="outline-dark" >Meet the Team</Button>
           </Row>
         </Col>
       </Row>
@@ -44,7 +44,7 @@ const HomeBody = () => (
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button href="/Workers" variant="primary">Select a Worker</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -57,7 +57,7 @@ const HomeBody = () => (
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content. 
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button href="/Workers" variant="primary">Select a Worker</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -70,7 +70,7 @@ const HomeBody = () => (
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button href="/Workers" variant="primary">Select a Worker</Button>
             </Card.Body>
           </Card>
         </Col>
