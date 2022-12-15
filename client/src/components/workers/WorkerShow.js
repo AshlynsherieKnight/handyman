@@ -30,7 +30,9 @@ const WorkerShow = ({ id, first_name, last_name, updateWorker, deleteWorker, cre
           <button onClick={() => deleteWorker(id)}>
             Delete
           </button>
-          <button>EDIT ME: Link to Services</button>
+          <Link to={`/${id}/services`}>
+            <button>Services</button>
+          </Link>
         </>
       }
     </>

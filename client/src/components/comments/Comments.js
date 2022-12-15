@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import CommentList from './CommentList';
+import CommentsList from './CommentsList';
 import CommentForm from './CommentForm';
 
 const Comments = () => {
@@ -47,7 +47,7 @@ const Comments = () => {
     <>
       <CommentForm addComment={addComment} />
       <h1>All comments</h1>
-      <CommentList 
+      <CommentsList 
         comments={comments}
         updateComments={updateComments}
         deleteComment={deleteComment}
