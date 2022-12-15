@@ -3,6 +3,8 @@ import "../styles/Main.css";
 
 const HomeBody = () => (
   <>
+  <br />
+  <br />
     <Container>
       <Row>
         <Col>
@@ -14,7 +16,7 @@ const HomeBody = () => (
         </Col>
         <Col>
           <Row>
-            <h3>Feature that is amazing</h3>
+            <h3>New Service: Handyman repairs!</h3>
           </Row>
           <Row>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -25,6 +27,8 @@ const HomeBody = () => (
         </Col>
       </Row>
     </Container>
+    <br />
+    <br />
     <Container>
       <Row>
         <h2>Services</h2>
@@ -32,7 +36,7 @@ const HomeBody = () => (
       </Row>
       <Row>
         <Col>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', height: '24rem' }}>
             <Card.Img variant="top" src="https://images.unsplash.com/photo-1452794268575-9819db203a5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
             <Card.Body>
               <Card.Title>Landscaping</Card.Title>
@@ -45,20 +49,20 @@ const HomeBody = () => (
           </Card>
         </Col>
         <Col>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', height: '24rem' }}>
             <Card.Img variant="top" src="https://images.unsplash.com/photo-1579417195379-5f6916d883a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1511&q=80" />
             <Card.Body>
               <Card.Title>Electrical</Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                bulk of the card's content. 
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', height: '24rem' }}>
             <Card.Img variant="top" src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
             <Card.Body>
               <Card.Title>Plumbing</Card.Title>
