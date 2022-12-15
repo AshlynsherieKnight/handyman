@@ -1,46 +1,46 @@
-class Api::WorkersController < ApplicationController
+class Api::servicessController < ApplicationController
 
- before_action :set_worker, only: [:show, :update, :destroy]
+ before_action :set_services, only: [:show, :update, :destroy]
   
   def index
-    render json: Worker.all
+    render json: Services.all
   end
   
   def show
-    render json: @worker
+    render json: @services
       end
   
    def create
-   @worker = Worker.new(worker_params)
-    if @worker.save
-     render json: @worker
+   @services = Services.new(services_params)
+    if @services.save
+     render json: @services
      else
-      render json: { errors: @worker.errors }, status: :unprocessable_entity
+      render json: { errors: @services.errors }, status: :unprocessable_entity
      end
     end
   
     def update
-      if @worker.update(worker_params)
-        render json: @worker
+      if @services.update(services_params)
+        render json: @services
       else
-        render json: { errors: @worker.errors }, status: :unprocessable_entity
+        render json: { errors: @services.errors }, status: :unprocessable_entity
       end
     end
   
     def destroy
-      @worker.destroy
-      render json: { message: 'worker deleted' }
+      @services.destroy
+      render json: { message: 'services deleted' }
   
       
     end
     private
     
-      def worker_params
-        params.require(:worker).permit(:first_name, :last_name)
+      def services_params
+        params.require(:services).permit(:first_name, :last_name)
       end
      
-      def set_worker
-        @worker = Worker.find(params[:id])
+      def set_services
+        @services = Services.find(params[:id])
       end
   end
 
