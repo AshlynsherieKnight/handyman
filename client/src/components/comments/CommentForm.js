@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { StyledH1 } from '../styles/MainStyles';
 
 const CommentForm = ({ addComment, id, comment_subject, comment_body, updateComments, setEdit }) => {
   const [comment, setComment] = useState({ comment_subject: '', comment_body: '' })
@@ -22,7 +23,7 @@ const CommentForm = ({ addComment, id, comment_subject, comment_body, updateComm
 
   return (
     <>
-      <h1>{id ? 'Update' : 'Create'} Comment</h1>
+      <StyledH1>{id ? 'Update' : 'Create'} Comment</StyledH1>
       <form onSubmit={handleSubmit}>
         <label>Subject</label>
         <input 
