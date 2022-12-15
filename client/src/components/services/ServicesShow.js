@@ -25,6 +25,8 @@ const ServicesShow = ({ id, service_type, info, location, updateServices, delete
         :
         <>
           <h2>{service_type}</h2>
+          <h4>{location}</h4>
+          <p>{info}</p>
           <button onClick={() => setEdit(true)}>
             Edit
           </button>
