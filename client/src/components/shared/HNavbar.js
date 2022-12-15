@@ -13,10 +13,7 @@ const HNavbar = () => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Link to='/'>
-            <li>Home</li>
-          </Link>
-          <Link to='/team'>
-            <li>Team</li>
+          <li>Home</li>
           </Link>
           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item>
@@ -24,7 +21,11 @@ const HNavbar = () => (
               <li>Workers</li>
               </Link>
             </NavDropdown.Item>
-            
+            <NavDropdown.Item>
+              <Link to='/team'>
+              <li>Team</li>
+              </Link>
+            </NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
