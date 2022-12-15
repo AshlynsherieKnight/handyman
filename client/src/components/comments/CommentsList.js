@@ -1,6 +1,6 @@
 import CommentShow from './CommentShow';
 
-const CommentList = ({ comments, updateComments, deleteComment }) => (
+const CommentsList = ({ comments, updateComments, deleteComment }) => (
   <>
     { comments.map(t => 
       <CommentShow
@@ -13,4 +13,4 @@ const CommentList = ({ comments, updateComments, deleteComment }) => (
   </>
 )
 
-export default CommentList;
+export default CommentsList;
